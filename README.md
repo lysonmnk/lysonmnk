@@ -1,112 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0B1120"/>
-      <stop offset="1" stop-color="#111827"/>
-    </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<div align="center">
 
-  <style>
-    text { font-family: 'Courier New', Consolas, monospace; }
-    .t   { font-size: 13px; fill: #38BDF8; opacity: 0; animation: twinkle 4s ease-in-out infinite; }
-    .g   { font-size: 64px; font-weight: 700; fill: #38BDF8; opacity: 0; animation: flick 0.16s step-end 5; }
-    .f   { font-size: 64px; font-weight: 700; fill: #F8FAFC; opacity: 0; animation: reveal 0.15s ease-out forwards; }
-    .cur { font-size: 64px; font-weight: 700; fill: #38BDF8; animation: blink 1s step-end infinite; }
-    .sub { font-size: 18px; fill: #94A3B8; opacity: 0; animation: fade 0.8s ease forwards; }
-    .line { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); animation: grow 1s ease forwards; }
+<img src="https://raw.githubusercontent.com/lysonmnk/lysonmnk/main/assets/code-reveal.svg" width="100%" alt="Lysonmnk - Frontend Developer" />
 
-    @keyframes flick  { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
-    @keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes blink  { 0% { opacity: 1; } 50% { opacity: 0; } }
-    @keyframes twinkle { 0%, 100% { opacity: 0; } 50% { opacity: 0.35; } }
-    @keyframes fade   { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes grow   { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-  </style>
+<br><br>
 
-  <!-- Background -->
-  <rect width="900" height="240" rx="16" fill="url(#bg)"/>
-  <rect x="0.5" y="0.5" width="899" height="239" rx="16" fill="none" stroke="#1E293B"/>
+[![Discord](https://img.shields.io/badge/Discord-lysonmnk-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=0F172A)](https://discord.gg/lysonmnk)
+[![GitHub](https://img.shields.io/badge/GitHub-lysonmnk-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0F172A)](https://github.com/lysonmnk)
+[![Gmail](https://img.shields.io/badge/Gmail-lysonmanik30%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0F172A)](mailto:lysonmanik30@gmail.com)
 
-  <!-- Random code fragments -->
-  <text class="t" x="60"  y="40"  style="animation-delay:0.4s;animation-duration:3.2s">fn()</text>
-  <text class="t" x="180" y="110" style="animation-delay:1.1s;animation-duration:4.1s">0x1F</text>
-  <text class="t" x="110" y="200" style="animation-delay:2.3s;animation-duration:3.6s">{ }</text>
-  <text class="t" x="300" y="28"  style="animation-delay:0.8s;animation-duration:4.4s">01101</text>
-  <text class="t" x="760" y="60"  style="animation-delay:1.9s;animation-duration:3.0s">=&gt;</text>
-  <text class="t" x="840" y="150" style="animation-delay:0.2s;animation-duration:3.8s">[]</text>
-  <text class="t" x="700" y="215" style="animation-delay:2.7s;animation-duration:4.6s">//</text>
-  <text class="t" x="230" y="222" style="animation-delay:3.4s;animation-duration:3.3s">$_</text>
-  <text class="t" x="600" y="28"  style="animation-delay:1.5s;animation-duration:3.9s">::</text>
-  <text class="t" x="40"  y="130" style="animation-delay:2.9s;animation-duration:4.2s">#!</text>
-  <text class="t" x="530" y="222" style="animation-delay:0.6s;animation-duration:3.5s">**</text>
-  <text class="t" x="850" y="220" style="animation-delay:3.1s;animation-duration:4.0s">01</text>
-  <text class="t" x="400" y="30"  style="animation-delay:2.0s;animation-duration:3.7s">fn()</text>
-  <text class="t" x="470" y="218" style="animation-delay:1.8s;animation-duration:3.7s">0x7A</text>
+<br>
 
-  <!-- Name: each letter scrambles, then resolves -->
-  <g filter="url(#glow)">
-    <!-- L (x=240) -->
-    <text class="g" x="240" y="135" style="animation-delay:0s">x</text>
-    <text class="g" x="240" y="135" style="animation-delay:0.05s">#</text>
-    <text class="g" x="240" y="135" style="animation-delay:0.1s">0</text>
-    <text class="f" x="240" y="135" style="animation-delay:0.95s">L</text>
+<img src="https://komarev.com/ghpvc/?username=lysonmnk&label=Profile%20views&color=0EA5E9&style=flat-square" alt="Profile views" />
 
-    <!-- y (x=292) -->
-    <text class="g" x="292" y="135" style="animation-delay:0.25s">%</text>
-    <text class="g" x="292" y="135" style="animation-delay:0.3s">1</text>
-    <text class="g" x="292" y="135" style="animation-delay:0.35s">{</text>
-    <text class="f" x="292" y="135" style="animation-delay:1.2s">y</text>
+</div>
 
-    <!-- s (x=344) -->
-    <text class="g" x="344" y="135" style="animation-delay:0.5s">&amp;</text>
-    <text class="g" x="344" y="135" style="animation-delay:0.55s">7</text>
-    <text class="g" x="344" y="135" style="animation-delay:0.6s">?</text>
-    <text class="f" x="344" y="135" style="animation-delay:1.45s">s</text>
+---
 
-    <!-- o (x=396) -->
-    <text class="g" x="396" y="135" style="animation-delay:0.75s">/</text>
-    <text class="g" x="396" y="135" style="animation-delay:0.8s">9</text>
-    <text class="g" x="396" y="135" style="animation-delay:0.85s">$</text>
-    <text class="f" x="396" y="135" style="animation-delay:1.7s">o</text>
+## 👨‍💻 About Me
 
-    <!-- n (x=448) -->
-    <text class="g" x="448" y="135" style="animation-delay:1.0s">*</text>
-    <text class="g" x="448" y="135" style="animation-delay:1.05s">2</text>
-    <text class="g" x="448" y="135" style="animation-delay:1.1s">}</text>
-    <text class="f" x="448" y="135" style="animation-delay:1.95s">n</text>
+I am a student at **Institut Teknologi Del** with a strong passion for frontend development. My work focuses on building clean, intuitive, and responsive user interfaces with accessible design systems. I am also actively exploring artificial intelligence integrations and modern software architecture.
 
-    <!-- m (x=500) -->
-    <text class="g" x="500" y="135" style="animation-delay:1.25s">5</text>
-    <text class="g" x="500" y="135" style="animation-delay:1.3s">!</text>
-    <text class="g" x="500" y="135" style="animation-delay:1.35s">=</text>
-    <text class="f" x="500" y="135" style="animation-delay:2.2s">m</text>
+| 🚀 Focus | 📚 Currently Studying | 🤝 Open To |
+|:---|:---|:---|
+| Frontend development with React & Next.js | Artificial Intelligence & ML | Collaborative web & open-source projects |
+| Responsive, modern & accessible UI/UX design | Project Management & Agile Methodologies | Technical discussions & peer learning |
+| High-performance client-server integration | Scalable software architecture | Mentoring & knowledge exchange |
 
-    <!-- n (x=552) -->
-    <text class="g" x="552" y="135" style="animation-delay:1.5s">~</text>
-    <text class="g" x="552" y="135" style="animation-delay:1.55s">4</text>
-    <text class="g" x="552" y="135" style="animation-delay:1.6s">+</text>
-    <text class="f" x="552" y="135" style="animation-delay:2.45s">n</text>
+---
 
-    <!-- k (x=604) -->
-    <text class="g" x="604" y="135" style="animation-delay:1.75s">;</text>
-    <text class="g" x="604" y="135" style="animation-delay:1.8s">8</text>
-    <text class="g" x="604" y="135" style="animation-delay:1.85s">^</text>
-    <text class="f" x="604" y="135" style="animation-delay:2.7s">k</text>
-  </g>
+## 🛠️ Technical Skills
 
-  <!-- Blinking cursor -->
-  <text class="cur" x="656" y="135">_</text>
+<details open>
+<summary><b>🎨 Frontend & UI/UX Design</b></summary>
+<br>
 
-  <!-- Accent line -->
-  <rect class="line" x="240" y="152" width="416" height="2" fill="#38BDF8" style="animation-delay:2.7s"/>
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,svelte,tailwind,figma,illustrator&perline=11&theme=dark" alt="Frontend skills" />
 
-  <!-- Subtitle -->
-  <text class="sub" x="450" y="188" text-anchor="middle" style="animation-delay:3s">Frontend Developer | Institut Teknologi Del</text>
-</svg>
+</details>
+
+<details>
+<summary><b>⚙️ Backend & Databases</b></summary>
+<br>
+
+<img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,spring,python,go,mongodb,mysql,postgres&perline=9&theme=dark" alt="Backend skills" />
+
+</details>
+
+<details>
+<summary><b>📱 Mobile & DevOps Tools</b></summary>
+<br>
+
+<img src="https://skillicons.dev/icons?i=flutter,kotlin,c,docker,git,github,vscode&perline=7&theme=dark" alt="Mobile and tools" />
+
+</details>
+
+---
+
+## 📂 Selected Projects
+
+| Project | Description | Tech Stack |
+|:---|:---|:---|
+| [**Catatan Belajar Ngoding**](https://github.com/lysonmnk/ifs24024-pabwe2026-proyek1) | Learning notes web application developed for PABWE 2026, featuring decoupled client-server architecture. | `React` `NestJS` |
+| [**ControlFlowCoverage**](https://github.com/lysonmnk/ControlFlowCoverage) | Automated white-box software testing analysis implementing control-flow graph coverage criteria. | `Software Testing` `Analysis` |
+| [**pemfung**](https://github.com/lysonmnk/pemfung) | Functional programming explorations and problem-solving implementations covering core FP paradigms. | `Functional Programming` |
+
+---
+
+## 📊 GitHub Statistics
+
+<p align="center">
+  <img height="165" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
+  <img height="165" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lysonmnk&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img height="160" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img alt="Achievements" src="https://github-profile-trophy.vercel.app/?username=lysonmnk&theme=tokyonight&no-frame=true&no-bg=true&column=7" />
+</p>
+
+---
+
+## 📬 Connect with Me
+
+- 💬 **Discord**: [discord.gg/lysonmnk](https://discord.gg/lysonmnk)
+- 🐙 **GitHub**: [@lysonmnk](https://github.com/lysonmnk)
+- ✉️ **Email**: [lysonmanik30@gmail.com](mailto:lysonmanik30@gmail.com)
