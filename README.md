@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/lysonmnk/lysonmnk/main/assets/code-reveal.svg" width="100%" alt="Lysonmnk - Frontend Developer | Backend Developer" />
+<img src="./assets/code-reveal.svg" width="100%" alt="Lysonmnk - Frontend Developer | Backend Developer" />
 
 <br><br>
 
@@ -16,38 +16,15 @@
 
 ---
 
-## 👨‍💻 About Me
+## 👨‍💻 About
 
-I am a developer with a core focus on **Frontend & Backend Development**. My work is driven by crafting intuitive, high-performance interfaces paired with clean, scalable, and secure backend systems. I am also actively diving into artificial intelligence integration and distributed architectures.
+I am a developer specializing in **Frontend & Backend Development**. My work focuses on building clear, responsive, and maintainable user interfaces paired with robust server-side architecture. I am also expanding my knowledge in artificial intelligence and modern software engineering practices.
 
-<details>
-<summary><b>💻 lysonmnk@developer:~$ cat dev-profile.json</b></summary>
-<br>
-
-```json
-{
-  "name": "Lyson Manik",
-  "roles": ["Frontend Developer", "Backend Developer"],
-  "location": "Indonesia",
-  "status": "🟢 Open for innovative projects and collaboration",
-  "stack": {
-    "frontend": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"],
-    "backend": ["Node.js", "NestJS", "Express", "PostgreSQL", "MongoDB"],
-    "devops_tools": ["Docker", "Git", "GitHub Actions"]
-  },
-  "philosophy": "Architecting clean, scalable code where intuitive UI meets resilient backend systems."
-}
-```
-
-</details>
-
-<br>
-
-| 🚀 Frontend & UI/UX | ⚙️ Backend & Architecture | 🤝 Open To |
+| 🚀 Focus | 📚 Currently Studying | 🤝 Open To |
 |:---|:---|:---|
-| Modern UI with React, Next.js & Tailwind | Scalable RESTful & modular APIs with NestJS & Node | Collaborative open-source & team projects |
-| Responsive, accessible design systems | Relational & NoSQL databases (Postgres, MongoDB) | Technical discussions & peer reviews |
-| High-performance interactive experiences | Clean architecture, testing & containerization | Mentoring and knowledge exchange |
+| Frontend development with React and Next.js | Artificial Intelligence & Cloud Architecture | Collaborative web projects |
+| Responsive and accessible interface design | Software Architecture & System Design | Technical discussion and peer learning |
+| High-performance backend services with Node & NestJS | Database Optimization & Microservices | Mentoring and knowledge exchange |
 
 ---
 
@@ -83,25 +60,17 @@ I am a developer with a core focus on **Frontend & Backend Development**. My wor
 
 | Project | Description | Technologies |
 |:---|:---|:---|
-| [**Catatan Belajar Ngoding**](https://github.com/lysonmnk/ifs24024-pabwe2026-proyek1) | Learning notes web application developed for PABWE 2026 with separate client & server architecture | `React` `NestJS` |
-| [**ControlFlowCoverage**](https://github.com/lysonmnk/ControlFlowCoverage) | Automated white-box testing tool analyzing statement & branch control-flow graph coverage | `Python` `Testing` |
-| [**pemfung**](https://github.com/lysonmnk/pemfung) | Functional programming explorations and problem-solving implementations covering core FP paradigms | `Functional Programming` |
+| [**Catatan Belajar Ngoding**](https://github.com/lysonmnk/ifs24024-pabwe2026-proyek1) | Learning notes application developed for the PABWE 2026 course, with separate frontend and backend services | React, NestJS |
+| [**ControlFlowCoverage**](https://github.com/lysonmnk/ControlFlowCoverage) | Automated white-box software testing analysis implementing control-flow graph coverage criteria | Python, Testing |
+| [**pemfung**](https://github.com/lysonmnk/pemfung) | Functional programming explorations and problem-solving implementations covering core FP paradigms | Functional Programming |
 
 ---
 
-## 📈 Activity & GitHub Statistics
+## 📊 GitHub Statistics
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lysonmnk&theme=tokyo-night&bg_color=0B1120&color=38BDF8&line=38BDF8&point=F8FAFC&area=true&hide_border=true" width="100%" alt="Contribution Graph" />
-</p>
-
-<p align="center">
-  <img height="165" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
-  <img height="165" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lysonmnk&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img height="160" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=true" />
+  <img height="170" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
+  <img height="170" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=true" />
 </p>
 
 <p align="center">
