@@ -15,26 +15,112 @@
 
   <style>
     text { font-family: 'Courier New', Consolas, monospace; }
-    .t   { font-size: 13px; fill: #38BDF8; opacity: 0; animation: twinkle 3.5s ease-in-out infinite; }
-    .g   { font-size: 64px; font-weight: 700; fill: #38BDF8; opacity: 0; animation: flick 0.14s step-end 3; }
-    .f   { font-size: 64px; font-weight: 700; fill: #F8FAFC; opacity: 0; animation: reveal 0.18s ease-out forwards; }
-    .cur { font-size: 64px; font-weight: 700; fill: #38BDF8; animation: blink 1s step-end infinite; }
-    .sub { font-size: 18px; fill: #94A3B8; opacity: 0; animation: fade 0.6s ease forwards; letter-spacing: 0.5px; }
-    .line { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); animation: grow 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-
-    @keyframes flick   { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
-    @keyframes reveal  { from { opacity: 0; transform: translateY(2px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes blink   { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    
+    /* Background code particles */
+    .t { font-size: 13px; fill: #38BDF8; opacity: 0; animation: twinkle 4s ease-in-out infinite; }
     @keyframes twinkle { 0%, 100% { opacity: 0; } 50% { opacity: 0.35; } }
-    @keyframes fade    { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes grow    { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    /* Blinking Cursor */
+    .cur { font-size: 64px; font-weight: 700; fill: #38BDF8; animation: blink 0.8s step-end infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+    /* Cursor Movement across 7s infinite loop */
+    .cursor-mover {
+      animation: cursorMove 7s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+    }
+    @keyframes cursorMove {
+      0%, 4%     { transform: translateX(232px); }
+      5%, 6.5%   { transform: translateX(284px); }
+      7%, 8.5%   { transform: translateX(336px); }
+      9%, 10.5%  { transform: translateX(388px); }
+      11%, 12.5% { transform: translateX(440px); }
+      13%, 14.5% { transform: translateX(492px); }
+      15%, 16.5% { transform: translateX(544px); }
+      17%, 19.5% { transform: translateX(596px); }
+      20%, 64%   { transform: translateX(656px); }
+      65%, 66.5% { transform: translateX(596px); }
+      67%, 68.5% { transform: translateX(544px); }
+      69%, 70.5% { transform: translateX(492px); }
+      71%, 72.5% { transform: translateX(440px); }
+      73%, 74.5% { transform: translateX(388px); }
+      75%, 76.5% { transform: translateX(336px); }
+      77%, 78.5% { transform: translateX(284px); }
+      80%, 100%  { transform: translateX(232px); }
+    }
+
+    /* Final characters reveal & reverse-vanish */
+    .f-0 { animation: char-0 7s ease forwards infinite; }
+    .f-1 { animation: char-1 7s ease forwards infinite; }
+    .f-2 { animation: char-2 7s ease forwards infinite; }
+    .f-3 { animation: char-3 7s ease forwards infinite; }
+    .f-4 { animation: char-4 7s ease forwards infinite; }
+    .f-5 { animation: char-5 7s ease forwards infinite; }
+    .f-6 { animation: char-6 7s ease forwards infinite; }
+    .f-7 { animation: char-7 7s ease forwards infinite; }
+
+    @keyframes char-0 { 0%, 4.5% { opacity: 0; } 5.0%, 79.5% { opacity: 1; } 80.0%, 100% { opacity: 0; } }
+    @keyframes char-1 { 0%, 6.5% { opacity: 0; } 7.1%, 77.4% { opacity: 1; } 77.9%, 100% { opacity: 0; } }
+    @keyframes char-2 { 0%, 8.7% { opacity: 0; } 9.3%, 75.2% { opacity: 1; } 75.7%, 100% { opacity: 0; } }
+    @keyframes char-3 { 0%, 10.8% { opacity: 0; } 11.4%, 73.1% { opacity: 1; } 73.6%, 100% { opacity: 0; } }
+    @keyframes char-4 { 0%, 13.0% { opacity: 0; } 13.6%, 70.9% { opacity: 1; } 71.4%, 100% { opacity: 0; } }
+    @keyframes char-5 { 0%, 15.1% { opacity: 0; } 15.7%, 68.8% { opacity: 1; } 69.3%, 100% { opacity: 0; } }
+    @keyframes char-6 { 0%, 17.3% { opacity: 0; } 17.9%, 66.6% { opacity: 1; } 67.1%, 100% { opacity: 0; } }
+    @keyframes char-7 { 0%, 19.4% { opacity: 0; } 20.0%, 64.5% { opacity: 1; } 65.0%, 100% { opacity: 0; } }
+
+    /* Glitch scramble glyphs */
+    .g-0 { animation: glitch-0 7s step-end infinite; }
+    .g-1 { animation: glitch-1 7s step-end infinite; }
+    .g-2 { animation: glitch-2 7s step-end infinite; }
+    .g-3 { animation: glitch-3 7s step-end infinite; }
+    .g-4 { animation: glitch-4 7s step-end infinite; }
+    .g-5 { animation: glitch-5 7s step-end infinite; }
+    .g-6 { animation: glitch-6 7s step-end infinite; }
+    .g-7 { animation: glitch-7 7s step-end infinite; }
+
+    @keyframes glitch-0 { 0% { opacity: 0; } 1.5%, 3.5% { opacity: 1; } 5.0%, 78.5% { opacity: 0; } 79.0%, 80.0% { opacity: 1; } 80.5%, 100% { opacity: 0; } }
+    @keyframes glitch-1 { 0%, 4.5% { opacity: 0; } 5.2%, 6.5% { opacity: 1; } 7.1%, 76.5% { opacity: 0; } 77.0%, 78.0% { opacity: 1; } 78.5%, 100% { opacity: 0; } }
+    @keyframes glitch-2 { 0%, 6.5% { opacity: 0; } 7.3%, 8.5% { opacity: 1; } 9.3%, 74.5% { opacity: 0; } 75.0%, 76.0% { opacity: 1; } 76.5%, 100% { opacity: 0; } }
+    @keyframes glitch-3 { 0%, 8.5% { opacity: 0; } 9.5%, 10.5% { opacity: 1; } 11.4%, 72.5% { opacity: 0; } 73.0%, 74.0% { opacity: 1; } 74.5%, 100% { opacity: 0; } }
+    @keyframes glitch-4 { 0%, 10.5% { opacity: 0; } 11.7%, 12.8% { opacity: 1; } 13.6%, 70.3% { opacity: 0; } 70.8%, 71.8% { opacity: 1; } 72.3%, 100% { opacity: 0; } }
+    @keyframes glitch-5 { 0%, 12.8% { opacity: 0; } 13.8%, 15.0% { opacity: 1; } 15.7%, 68.2% { opacity: 0; } 68.7%, 69.7% { opacity: 1; } 70.2%, 100% { opacity: 0; } }
+    @keyframes glitch-6 { 0%, 15.0% { opacity: 0; } 16.0%, 17.0% { opacity: 1; } 17.9%, 66.0% { opacity: 0; } 66.5%, 67.5% { opacity: 1; } 68.0%, 100% { opacity: 0; } }
+    @keyframes glitch-7 { 0%, 17.0% { opacity: 0; } 18.2%, 19.3% { opacity: 1; } 20.0%, 63.8% { opacity: 0; } 64.3%, 65.3% { opacity: 1; } 65.8%, 100% { opacity: 0; } }
+
+    /* Accent line expands & contracts */
+    .line {
+      transform-box: fill-box;
+      transform-origin: 0 50%;
+      animation: lineCycle 7s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+    }
+    @keyframes lineCycle {
+      0%, 19%   { transform: scaleX(0); }
+      24%, 60%  { transform: scaleX(1); }
+      64%, 100% { transform: scaleX(0); }
+    }
+
+    /* Subtitle fades in & out */
+    .sub {
+      font-size: 18px;
+      fill: #94A3B8;
+      letter-spacing: 0.5px;
+      animation: subCycle 7s ease infinite;
+    }
+    @keyframes subCycle {
+      0%, 20%   { opacity: 0; transform: translateY(4px); }
+      26%, 59%  { opacity: 1; transform: translateY(0); }
+      64%, 100% { opacity: 0; transform: translateY(4px); }
+    }
+
+    /* Common typography styles */
+    .letter-base { font-size: 64px; font-weight: 700; fill: #F8FAFC; }
+    .glitch-base { font-size: 64px; font-weight: 700; fill: #38BDF8; }
   </style>
 
   <!-- Background -->
   <rect width="900" height="240" rx="16" fill="url(#bg)"/>
   <rect x="0.5" y="0.5" width="899" height="239" rx="16" fill="none" stroke="#1E293B"/>
 
-  <!-- Random code fragments -->
+  <!-- Code fragments ambiance -->
   <text class="t" x="60"  y="40"  style="animation-delay:0.3s;animation-duration:3.2s">fn()</text>
   <text class="t" x="180" y="110" style="animation-delay:0.9s;animation-duration:4.1s">0x1F</text>
   <text class="t" x="110" y="200" style="animation-delay:1.8s;animation-duration:3.6s">{ }</text>
@@ -50,63 +136,49 @@
   <text class="t" x="400" y="30"  style="animation-delay:1.5s;animation-duration:3.7s">async</text>
   <text class="t" x="470" y="218" style="animation-delay:1.3s;animation-duration:3.7s">0x7A</text>
 
-  <!-- Name: Scramble decode animation (balanced, visible, and smooth) -->
+  <!-- Name & Cursor with Glow -->
   <g filter="url(#glow)">
-    <!-- L (x=240) -->
-    <text class="g" x="240" y="135" style="animation-delay:0s">x</text>
-    <text class="g" x="240" y="135" style="animation-delay:0.08s">#</text>
-    <text class="g" x="240" y="135" style="animation-delay:0.18s">0</text>
-    <text class="f" x="240" y="135" style="animation-delay:0.40s">L</text>
+    <!-- Letter L (x=240) -->
+    <text class="glitch-base g-0" x="240" y="135">#</text>
+    <text class="letter-base f-0" x="240" y="135">L</text>
 
-    <!-- y (x=292) -->
-    <text class="g" x="292" y="135" style="animation-delay:0.12s">%</text>
-    <text class="g" x="292" y="135" style="animation-delay:0.20s">1</text>
-    <text class="g" x="292" y="135" style="animation-delay:0.30s">{</text>
-    <text class="f" x="292" y="135" style="animation-delay:0.52s">y</text>
+    <!-- Letter y (x=292) -->
+    <text class="glitch-base g-1" x="292" y="135">%</text>
+    <text class="letter-base f-1" x="292" y="135">y</text>
 
-    <!-- s (x=344) -->
-    <text class="g" x="344" y="135" style="animation-delay:0.24s">&amp;</text>
-    <text class="g" x="344" y="135" style="animation-delay:0.32s">7</text>
-    <text class="g" x="344" y="135" style="animation-delay:0.42s">?</text>
-    <text class="f" x="344" y="135" style="animation-delay:0.64s">s</text>
+    <!-- Letter s (x=344) -->
+    <text class="glitch-base g-2" x="344" y="135">&amp;</text>
+    <text class="letter-base f-2" x="344" y="135">s</text>
 
-    <!-- o (x=396) -->
-    <text class="g" x="396" y="135" style="animation-delay:0.36s">/</text>
-    <text class="g" x="396" y="135" style="animation-delay:0.44s">9</text>
-    <text class="g" x="396" y="135" style="animation-delay:0.54s">$</text>
-    <text class="f" x="396" y="135" style="animation-delay:0.76s">o</text>
+    <!-- Letter o (x=396) -->
+    <text class="glitch-base g-3" x="396" y="135">/</text>
+    <text class="letter-base f-3" x="396" y="135">o</text>
 
-    <!-- n (x=448) -->
-    <text class="g" x="448" y="135" style="animation-delay:0.48s">*</text>
-    <text class="g" x="448" y="135" style="animation-delay:0.56s">2</text>
-    <text class="g" x="448" y="135" style="animation-delay:0.66s">}</text>
-    <text class="f" x="448" y="135" style="animation-delay:0.88s">n</text>
+    <!-- Letter n (x=448) -->
+    <text class="glitch-base g-4" x="448" y="135">*</text>
+    <text class="letter-base f-4" x="448" y="135">n</text>
 
-    <!-- m (x=500) -->
-    <text class="g" x="500" y="135" style="animation-delay:0.60s">5</text>
-    <text class="g" x="500" y="135" style="animation-delay:0.68s">!</text>
-    <text class="g" x="500" y="135" style="animation-delay:0.78s">=</text>
-    <text class="f" x="500" y="135" style="animation-delay:1.00s">m</text>
+    <!-- Letter m (x=500) -->
+    <text class="glitch-base g-5" x="500" y="135">5</text>
+    <text class="letter-base f-5" x="500" y="135">m</text>
 
-    <!-- n (x=552) -->
-    <text class="g" x="552" y="135" style="animation-delay:0.72s">~</text>
-    <text class="g" x="552" y="135" style="animation-delay:0.80s">4</text>
-    <text class="g" x="552" y="135" style="animation-delay:0.90s">+</text>
-    <text class="f" x="552" y="135" style="animation-delay:1.12s">n</text>
+    <!-- Letter n (x=552) -->
+    <text class="glitch-base g-6" x="552" y="135">~</text>
+    <text class="letter-base f-6" x="552" y="135">n</text>
 
-    <!-- k (x=604) -->
-    <text class="g" x="604" y="135" style="animation-delay:0.84s">;</text>
-    <text class="g" x="604" y="135" style="animation-delay:0.92s">8</text>
-    <text class="g" x="604" y="135" style="animation-delay:1.02s">^</text>
-    <text class="f" x="604" y="135" style="animation-delay:1.24s">k</text>
+    <!-- Letter k (x=604) -->
+    <text class="glitch-base g-7" x="604" y="135">;</text>
+    <text class="letter-base f-7" x="604" y="135">k</text>
+
+    <!-- Interactive traveling terminal cursor -->
+    <g class="cursor-mover">
+      <text class="cur" x="0" y="135">_</text>
+    </g>
   </g>
 
-  <!-- Blinking cursor -->
-  <text class="cur" x="656" y="135">_</text>
+  <!-- Accent Line -->
+  <rect class="line" x="240" y="152" width="416" height="2" fill="#38BDF8"/>
 
-  <!-- Accent line: smoothly grows right as name finishes resolving -->
-  <rect class="line" x="240" y="152" width="416" height="2" fill="#38BDF8" style="animation-delay:1.24s"/>
-
-  <!-- Subtitle: Updated cleanly to Backend Dev -->
-  <text class="sub" x="450" y="188" text-anchor="middle" style="animation-delay:1.35s">Frontend Developer | Backend Dev</text>
+  <!-- Subtitle: Updated to Backend Developer -->
+  <text class="sub" x="450" y="188" text-anchor="middle">Frontend Developer | Backend Developer</text>
 </svg>
