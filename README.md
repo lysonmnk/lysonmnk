@@ -24,7 +24,7 @@
 
 I am a developer specializing in **Frontend & Backend Development**. My work focuses on building clear, responsive, and maintainable user interfaces paired with robust server-side architecture. I am also expanding my knowledge in artificial intelligence and modern software engineering practices.
 
-| 🚀 Focus | 📚 Currently Studying | 🤝 Open To |
+| Focus | Currently Studying | Open To |
 |:---|:---|:---|
 | Frontend development with React and Next.js | Artificial Intelligence & Cloud Architecture | Collaborative web projects |
 | Responsive and accessible interface design | Software Architecture & System Design | Technical discussion and peer learning |
@@ -41,7 +41,7 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 <br>
 
 <details open>
-<summary><b>🎨 Frontend and Design</b></summary>
+<summary><b>Frontend and Design</b></summary>
 <br>
 
 <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,svelte,tailwind,figma,illustrator&perline=11&theme=dark" alt="Frontend skills" />
@@ -49,7 +49,7 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 </details>
 
 <details>
-<summary><b>⚙️ Backend and Databases</b></summary>
+<summary><b>Backend and Databases</b></summary>
 <br>
 
 <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,spring,python,go,mongodb,mysql,postgres&perline=9&theme=dark" alt="Backend skills" />
@@ -57,7 +57,7 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 </details>
 
 <details>
-<summary><b>📱 Mobile and Tools</b></summary>
+<summary><b>Mobile and Tools</b></summary>
 <br>
 
 <img src="https://skillicons.dev/icons?i=flutter,kotlin,c,docker,git,github,vscode&perline=7&theme=dark" alt="Mobile and tools" />
@@ -91,12 +91,7 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 <br>
 
 <p align="center">
-  <img height="170" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&theme=tokyonight&hide_border=false&bg_color=080D1A&border_color=1E293B&title_color=38BDF8&text_color=94A3B8&icon_color=38BDF8&include_all_commits=true" />
-  <img height="170" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=false&background=080D1A&border=1E293B&stroke=1E293B&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8" />
-</p>
-
-<p align="center">
-  <img alt="Achievements" src="https://github-profile-trophy.vercel.app/?username=lysonmnk&theme=tokyonight&no-frame=true&no-bg=true&column=7" />
+  <img height="180" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=false&background=080D1A&border=1E293B&stroke=1E293B&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8" />
 </p>
 
 <br>
@@ -109,6 +104,6 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 
 <br>
 
-- 💬 **Discord**: [discord.gg/lysonmnk](https://discord.gg/lysonmnk)
-- 🐙 **GitHub**: [github.com/lysonmnk](https://github.com/lysonmnk)
-- ✉️ **Email**: [lysonmanik30@gmail.com](mailto:lysonmanik30@gmail.com)
+- **Discord**: [discord.gg/lysonmnk](https://discord.gg/lysonmnk)
+- **GitHub**: [github.com/lysonmnk](https://github.com/lysonmnk)
+- **Email**: [lysonmanik30@gmail.com](mailto:lysonmanik30@gmail.com)

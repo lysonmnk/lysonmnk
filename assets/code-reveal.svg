@@ -58,7 +58,7 @@
 
     /* Nebula Pulsing */
     .aurora-core {
-      animation: pulseCore 6s ease-in-out infinite;
+      animation: pulseCore 8s ease-in-out infinite;
       transform-origin: 450px 120px;
     }
     @keyframes pulseCore {
@@ -68,7 +68,7 @@
 
     /* Scanning Laser Line */
     .scan-laser {
-      animation: scanSweep 7s ease-in-out infinite;
+      animation: scanSweep 11s ease-in-out infinite;
     }
     @keyframes scanSweep {
       0%   { transform: translateY(0px); opacity: 0; }
@@ -81,10 +81,10 @@
     .particle {
       font-size: 13px;
       fill: #38BDF8;
-      animation: floatPart 5s ease-in-out infinite;
+      animation: floatPart 6s ease-in-out infinite;
     }
-    .p-fast { animation-duration: 3.5s; }
-    .p-slow { animation-duration: 6.5s; }
+    .p-fast { animation-duration: 4.5s; }
+    .p-slow { animation-duration: 8s; }
 
     @keyframes floatPart {
       0%, 100% { opacity: 0.15; transform: translateY(0); }
@@ -96,7 +96,7 @@
       stroke: #38BDF8;
       stroke-width: 1.5;
       fill: none;
-      animation: hudPulse 4s ease-in-out infinite;
+      animation: hudPulse 5s ease-in-out infinite;
     }
     @keyframes hudPulse {
       0%, 100% { opacity: 0.4; stroke-width: 1.5; }
@@ -104,81 +104,81 @@
     }
 
     /* Blinking Cursor */
-    .cur { font-size: 64px; font-weight: 700; fill: #38BDF8; animation: blink 0.8s step-end infinite; }
+    .cur { font-size: 64px; font-weight: 700; fill: #38BDF8; animation: blink 0.9s step-end infinite; }
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-    /* Cursor Movement across 7s infinite loop */
+    /* Cursor Movement across prolonged 11s infinite loop */
     .cursor-mover {
-      animation: cursorMove 7s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+      animation: cursorMove 11s cubic-bezier(0.25, 1, 0.5, 1) infinite;
     }
     @keyframes cursorMove {
-      0%, 4%     { transform: translateX(232px); }
-      5%, 6.5%   { transform: translateX(284px); }
-      7%, 8.5%   { transform: translateX(336px); }
-      9%, 10.5%  { transform: translateX(388px); }
-      11%, 12.5% { transform: translateX(440px); }
-      13%, 14.5% { transform: translateX(492px); }
-      15%, 16.5% { transform: translateX(544px); }
-      17%, 19.5% { transform: translateX(596px); }
-      20%, 64%   { transform: translateX(656px); }
-      65%, 66.5% { transform: translateX(596px); }
-      67%, 68.5% { transform: translateX(544px); }
-      69%, 70.5% { transform: translateX(492px); }
-      71%, 72.5% { transform: translateX(440px); }
-      73%, 74.5% { transform: translateX(388px); }
-      75%, 76.5% { transform: translateX(336px); }
-      77%, 78.5% { transform: translateX(284px); }
-      80%, 100%  { transform: translateX(232px); }
+      0%, 2.7%   { transform: translateX(232px); }
+      3.6%, 5.4% { transform: translateX(284px); }
+      6.4%, 8.2% { transform: translateX(336px); }
+      9.1%, 10.9%{ transform: translateX(388px); }
+      11.8%, 13.6%{ transform: translateX(440px); }
+      14.5%, 16.3%{ transform: translateX(492px); }
+      17.3%, 19.1%{ transform: translateX(544px); }
+      20.0%, 21.8%{ transform: translateX(596px); }
+      22.7%, 68.2%{ transform: translateX(656px); }
+      69.1%, 70.9%{ transform: translateX(596px); }
+      71.8%, 73.6%{ transform: translateX(544px); }
+      74.5%, 76.3%{ transform: translateX(492px); }
+      77.3%, 79.1%{ transform: translateX(440px); }
+      80.0%, 81.8%{ transform: translateX(388px); }
+      82.7%, 84.5%{ transform: translateX(336px); }
+      85.5%, 87.2%{ transform: translateX(284px); }
+      88.2%, 100% { transform: translateX(232px); }
     }
 
-    /* Final characters reveal & reverse-vanish */
-    .f-0 { animation: char-0 7s ease forwards infinite; }
-    .f-1 { animation: char-1 7s ease forwards infinite; }
-    .f-2 { animation: char-2 7s ease forwards infinite; }
-    .f-3 { animation: char-3 7s ease forwards infinite; }
-    .f-4 { animation: char-4 7s ease forwards infinite; }
-    .f-5 { animation: char-5 7s ease forwards infinite; }
-    .f-6 { animation: char-6 7s ease forwards infinite; }
-    .f-7 { animation: char-7 7s ease forwards infinite; }
+    /* Final characters reveal & reverse-vanish (prolonged timing) */
+    .f-0 { animation: char-0 11s ease forwards infinite; }
+    .f-1 { animation: char-1 11s ease forwards infinite; }
+    .f-2 { animation: char-2 11s ease forwards infinite; }
+    .f-3 { animation: char-3 11s ease forwards infinite; }
+    .f-4 { animation: char-4 11s ease forwards infinite; }
+    .f-5 { animation: char-5 11s ease forwards infinite; }
+    .f-6 { animation: char-6 11s ease forwards infinite; }
+    .f-7 { animation: char-7 11s ease forwards infinite; }
 
-    @keyframes char-0 { 0%, 4.5% { opacity: 0; } 5.0%, 79.5% { opacity: 1; } 80.0%, 100% { opacity: 0; } }
-    @keyframes char-1 { 0%, 6.5% { opacity: 0; } 7.1%, 77.4% { opacity: 1; } 77.9%, 100% { opacity: 0; } }
-    @keyframes char-2 { 0%, 8.7% { opacity: 0; } 9.3%, 75.2% { opacity: 1; } 75.7%, 100% { opacity: 0; } }
-    @keyframes char-3 { 0%, 10.8% { opacity: 0; } 11.4%, 73.1% { opacity: 1; } 73.6%, 100% { opacity: 0; } }
-    @keyframes char-4 { 0%, 13.0% { opacity: 0; } 13.6%, 70.9% { opacity: 1; } 71.4%, 100% { opacity: 0; } }
-    @keyframes char-5 { 0%, 15.1% { opacity: 0; } 15.7%, 68.8% { opacity: 1; } 69.3%, 100% { opacity: 0; } }
-    @keyframes char-6 { 0%, 17.3% { opacity: 0; } 17.9%, 66.6% { opacity: 1; } 67.1%, 100% { opacity: 0; } }
-    @keyframes char-7 { 0%, 19.4% { opacity: 0; } 20.0%, 64.5% { opacity: 1; } 65.0%, 100% { opacity: 0; } }
+    @keyframes char-0 { 0%, 3.1% { opacity: 0; } 3.6%, 87.7% { opacity: 1; } 88.2%, 100% { opacity: 0; } }
+    @keyframes char-1 { 0%, 5.9% { opacity: 0; } 6.4%, 85.0% { opacity: 1; } 85.5%, 100% { opacity: 0; } }
+    @keyframes char-2 { 0%, 8.6% { opacity: 0; } 9.1%, 82.2% { opacity: 1; } 82.7%, 100% { opacity: 0; } }
+    @keyframes char-3 { 0%, 11.3%{ opacity: 0; } 11.8%, 79.5%{ opacity: 1; } 80.0%, 100% { opacity: 0; } }
+    @keyframes char-4 { 0%, 14.0%{ opacity: 0; } 14.5%, 76.8%{ opacity: 1; } 77.3%, 100% { opacity: 0; } }
+    @keyframes char-5 { 0%, 16.8%{ opacity: 0; } 17.3%, 74.0%{ opacity: 1; } 74.5%, 100% { opacity: 0; } }
+    @keyframes char-6 { 0%, 19.5%{ opacity: 0; } 20.0%, 71.3%{ opacity: 1; } 71.8%, 100% { opacity: 0; } }
+    @keyframes char-7 { 0%, 22.2%{ opacity: 0; } 22.7%, 68.6%{ opacity: 1; } 69.1%, 100% { opacity: 0; } }
 
     /* Glitch scramble glyphs */
-    .g-0 { animation: glitch-0 7s step-end infinite; }
-    .g-1 { animation: glitch-1 7s step-end infinite; }
-    .g-2 { animation: glitch-2 7s step-end infinite; }
-    .g-3 { animation: glitch-3 7s step-end infinite; }
-    .g-4 { animation: glitch-4 7s step-end infinite; }
-    .g-5 { animation: glitch-5 7s step-end infinite; }
-    .g-6 { animation: glitch-6 7s step-end infinite; }
-    .g-7 { animation: glitch-7 7s step-end infinite; }
+    .g-0 { animation: glitch-0 11s step-end infinite; }
+    .g-1 { animation: glitch-1 11s step-end infinite; }
+    .g-2 { animation: glitch-2 11s step-end infinite; }
+    .g-3 { animation: glitch-3 11s step-end infinite; }
+    .g-4 { animation: glitch-4 11s step-end infinite; }
+    .g-5 { animation: glitch-5 11s step-end infinite; }
+    .g-6 { animation: glitch-6 11s step-end infinite; }
+    .g-7 { animation: glitch-7 11s step-end infinite; }
 
-    @keyframes glitch-0 { 0% { opacity: 0; } 1.5%, 3.5% { opacity: 1; } 5.0%, 78.5% { opacity: 0; } 79.0%, 80.0% { opacity: 1; } 80.5%, 100% { opacity: 0; } }
-    @keyframes glitch-1 { 0%, 4.5% { opacity: 0; } 5.2%, 6.5% { opacity: 1; } 7.1%, 76.5% { opacity: 0; } 77.0%, 78.0% { opacity: 1; } 78.5%, 100% { opacity: 0; } }
-    @keyframes glitch-2 { 0%, 6.5% { opacity: 0; } 7.3%, 8.5% { opacity: 1; } 9.3%, 74.5% { opacity: 0; } 75.0%, 76.0% { opacity: 1; } 76.5%, 100% { opacity: 0; } }
-    @keyframes glitch-3 { 0%, 8.5% { opacity: 0; } 9.5%, 10.5% { opacity: 1; } 11.4%, 72.5% { opacity: 0; } 73.0%, 74.0% { opacity: 1; } 74.5%, 100% { opacity: 0; } }
-    @keyframes glitch-4 { 0%, 10.5% { opacity: 0; } 11.7%, 12.8% { opacity: 1; } 13.6%, 70.3% { opacity: 0; } 70.8%, 71.8% { opacity: 1; } 72.3%, 100% { opacity: 0; } }
-    @keyframes glitch-5 { 0%, 12.8% { opacity: 0; } 13.8%, 15.0% { opacity: 1; } 15.7%, 68.2% { opacity: 0; } 68.7%, 69.7% { opacity: 1; } 70.2%, 100% { opacity: 0; } }
-    @keyframes glitch-6 { 0%, 15.0% { opacity: 0; } 16.0%, 17.0% { opacity: 1; } 17.9%, 66.0% { opacity: 0; } 66.5%, 67.5% { opacity: 1; } 68.0%, 100% { opacity: 0; } }
-    @keyframes glitch-7 { 0%, 17.0% { opacity: 0; } 18.2%, 19.3% { opacity: 1; } 20.0%, 63.8% { opacity: 0; } 64.3%, 65.3% { opacity: 1; } 65.8%, 100% { opacity: 0; } }
+    @keyframes glitch-0 { 0% { opacity: 0; } 1.0%, 2.7% { opacity: 1; } 3.6%, 86.8% { opacity: 0; } 87.2%, 88.0% { opacity: 1; } 88.2%, 100% { opacity: 0; } }
+    @keyframes glitch-1 { 0%, 3.6% { opacity: 0; } 4.5%, 5.6% { opacity: 1; } 6.4%, 84.1% { opacity: 0; } 84.5%, 85.3% { opacity: 1; } 85.5%, 100% { opacity: 0; } }
+    @keyframes glitch-2 { 0%, 6.4% { opacity: 0; } 7.3%, 8.3% { opacity: 1; } 9.1%, 81.3% { opacity: 0; } 81.8%, 82.5% { opacity: 1; } 82.7%, 100% { opacity: 0; } }
+    @keyframes glitch-3 { 0%, 9.1% { opacity: 0; } 10.0%, 11.0% { opacity: 1; } 11.8%, 78.6% { opacity: 0; } 79.1%, 79.8% { opacity: 1; } 80.0%, 100% { opacity: 0; } }
+    @keyframes glitch-4 { 0%, 11.8%{ opacity: 0; } 12.7%, 13.7% { opacity: 1; } 14.5%, 75.9% { opacity: 0; } 76.4%, 77.1% { opacity: 1; } 77.3%, 100% { opacity: 0; } }
+    @keyframes glitch-5 { 0%, 14.5%{ opacity: 0; } 15.5%, 16.5% { opacity: 1; } 17.3%, 73.1% { opacity: 0; } 73.6%, 74.3% { opacity: 1; } 74.5%, 100% { opacity: 0; } }
+    @keyframes glitch-6 { 0%, 17.3%{ opacity: 0; } 18.2%, 19.2% { opacity: 1; } 20.0%, 70.4% { opacity: 0; } 70.9%, 71.6% { opacity: 1; } 71.8%, 100% { opacity: 0; } }
+    @keyframes glitch-7 { 0%, 20.0%{ opacity: 0; } 21.0%, 22.0% { opacity: 1; } 22.7%, 67.7% { opacity: 0; } 68.2%, 68.9% { opacity: 1; } 69.1%, 100% { opacity: 0; } }
 
     /* Accent line expands & contracts */
     .line {
       transform-box: fill-box;
       transform-origin: 0 50%;
-      animation: lineCycle 7s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+      animation: lineCycle 11s cubic-bezier(0.16, 1, 0.3, 1) infinite;
     }
     @keyframes lineCycle {
-      0%, 19%   { transform: scaleX(0); }
-      24%, 60%  { transform: scaleX(1); }
-      64%, 100% { transform: scaleX(0); }
+      0%, 21.8% { transform: scaleX(0); }
+      26.0%, 65.5%{ transform: scaleX(1); }
+      69.1%, 100%{ transform: scaleX(0); }
     }
 
     /* Subtitle fades in & out */
@@ -186,12 +186,12 @@
       font-size: 18px;
       fill: #94A3B8;
       letter-spacing: 0.5px;
-      animation: subCycle 7s ease infinite;
+      animation: subCycle 11s ease infinite;
     }
     @keyframes subCycle {
-      0%, 20%   { opacity: 0; transform: translateY(4px); }
-      26%, 59%  { opacity: 1; transform: translateY(0); }
-      64%, 100% { opacity: 0; transform: translateY(4px); }
+      0%, 23.6% { opacity: 0; transform: translateY(4px); }
+      28.0%, 64.5%{ opacity: 1; transform: translateY(0); }
+      68.2%, 100%{ opacity: 0; transform: translateY(4px); }
     }
 
     /* Typography bases */
@@ -216,13 +216,16 @@
     <rect x="0" y="0" width="900" height="2" fill="url(#scanBeam)"/>
   </g>
 
-  <!-- Layer 5: Terminal Header Bar & Dots -->
+  <!-- Layer 5: Terminal Header Bar & Vector Status Indicator -->
   <g opacity="0.75">
     <circle cx="28" cy="22" r="4.5" fill="#EF4444"/>
     <circle cx="44" cy="22" r="4.5" fill="#F59E0B"/>
     <circle cx="60" cy="22" r="4.5" fill="#10B981"/>
     <text x="80" y="26" font-size="11" fill="#475569" letter-spacing="1">terminal: bash - lysonmnk@profile:~</text>
-    <text x="860" y="26" font-size="10" fill="#38BDF8" font-weight="700" text-anchor="end" opacity="0.6">SYS:ONLINE 🟢</text>
+    <g transform="translate(805, 22)">
+      <circle cx="0" cy="0" r="3.5" fill="#10B981"/>
+      <text x="8" y="3.5" font-size="10" fill="#38BDF8" font-weight="700">SYS:ONLINE</text>
+    </g>
   </g>
 
   <!-- Layer 6: Cyberpunk HUD Corner Brackets -->
