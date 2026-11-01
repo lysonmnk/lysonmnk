@@ -1,16 +1,112 @@
-<h1 align="center">Hi 👋, I'm Lysonmnk</h1>
-<h3 align="center">A passionate frontend developer from India</h3>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=lysonmnk&label=Profile%20views&color=0e75b6&style=flat" alt="lysonmnk" /> </p>
+  <style>
+    text { font-family: 'Courier New', Consolas, monospace; }
+    .t   { font-size: 13px; fill: #38BDF8; opacity: 0; animation: twinkle 4s ease-in-out infinite; }
+    .g   { font-size: 64px; font-weight: 700; fill: #38BDF8; opacity: 0; animation: flick 0.16s step-end 5; }
+    .f   { font-size: 64px; font-weight: 700; fill: #F8FAFC; opacity: 0; animation: reveal 0.15s ease-out forwards; }
+    .cur { font-size: 64px; font-weight: 700; fill: #38BDF8; animation: blink 1s step-end infinite; }
+    .sub { font-size: 18px; fill: #94A3B8; opacity: 0; animation: fade 0.8s ease forwards; }
+    .line { transform-box: fill-box; transform-origin: 0 50%; transform: scaleX(0); animation: grow 1s ease forwards; }
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://discord.gg/lysonmnk" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="lysonmnk" height="30" width="40" /></a>
-</p>
+    @keyframes flick  { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes reveal { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes blink  { 0% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes twinkle { 0%, 100% { opacity: 0; } 50% { opacity: 0.35; } }
+    @keyframes fade   { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes grow   { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  </style>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://www.haskell.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg" alt="haskell" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://www.invisionapp.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg" alt="invision" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nestjs.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg" alt="nestjs" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a> <a href="https://svelte.dev" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="svelte" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a> </p>
+  <!-- Background -->
+  <rect width="900" height="240" rx="16" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="899" height="239" rx="16" fill="none" stroke="#1E293B"/>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&locale=en" alt="lysonmnk" /></p>
+  <!-- Random code fragments -->
+  <text class="t" x="60"  y="40"  style="animation-delay:0.4s;animation-duration:3.2s">fn()</text>
+  <text class="t" x="180" y="110" style="animation-delay:1.1s;animation-duration:4.1s">0x1F</text>
+  <text class="t" x="110" y="200" style="animation-delay:2.3s;animation-duration:3.6s">{ }</text>
+  <text class="t" x="300" y="28"  style="animation-delay:0.8s;animation-duration:4.4s">01101</text>
+  <text class="t" x="760" y="60"  style="animation-delay:1.9s;animation-duration:3.0s">=&gt;</text>
+  <text class="t" x="840" y="150" style="animation-delay:0.2s;animation-duration:3.8s">[]</text>
+  <text class="t" x="700" y="215" style="animation-delay:2.7s;animation-duration:4.6s">//</text>
+  <text class="t" x="230" y="222" style="animation-delay:3.4s;animation-duration:3.3s">$_</text>
+  <text class="t" x="600" y="28"  style="animation-delay:1.5s;animation-duration:3.9s">::</text>
+  <text class="t" x="40"  y="130" style="animation-delay:2.9s;animation-duration:4.2s">#!</text>
+  <text class="t" x="530" y="222" style="animation-delay:0.6s;animation-duration:3.5s">**</text>
+  <text class="t" x="850" y="220" style="animation-delay:3.1s;animation-duration:4.0s">01</text>
+  <text class="t" x="400" y="30"  style="animation-delay:2.0s;animation-duration:3.7s">fn()</text>
+  <text class="t" x="470" y="218" style="animation-delay:1.8s;animation-duration:3.7s">0x7A</text>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=lysonmnk&" alt="lysonmnk" /></p>
+  <!-- Name: each letter scrambles, then resolves -->
+  <g filter="url(#glow)">
+    <!-- L (x=240) -->
+    <text class="g" x="240" y="135" style="animation-delay:0s">x</text>
+    <text class="g" x="240" y="135" style="animation-delay:0.05s">#</text>
+    <text class="g" x="240" y="135" style="animation-delay:0.1s">0</text>
+    <text class="f" x="240" y="135" style="animation-delay:0.95s">L</text>
+
+    <!-- y (x=292) -->
+    <text class="g" x="292" y="135" style="animation-delay:0.25s">%</text>
+    <text class="g" x="292" y="135" style="animation-delay:0.3s">1</text>
+    <text class="g" x="292" y="135" style="animation-delay:0.35s">{</text>
+    <text class="f" x="292" y="135" style="animation-delay:1.2s">y</text>
+
+    <!-- s (x=344) -->
+    <text class="g" x="344" y="135" style="animation-delay:0.5s">&amp;</text>
+    <text class="g" x="344" y="135" style="animation-delay:0.55s">7</text>
+    <text class="g" x="344" y="135" style="animation-delay:0.6s">?</text>
+    <text class="f" x="344" y="135" style="animation-delay:1.45s">s</text>
+
+    <!-- o (x=396) -->
+    <text class="g" x="396" y="135" style="animation-delay:0.75s">/</text>
+    <text class="g" x="396" y="135" style="animation-delay:0.8s">9</text>
+    <text class="g" x="396" y="135" style="animation-delay:0.85s">$</text>
+    <text class="f" x="396" y="135" style="animation-delay:1.7s">o</text>
+
+    <!-- n (x=448) -->
+    <text class="g" x="448" y="135" style="animation-delay:1.0s">*</text>
+    <text class="g" x="448" y="135" style="animation-delay:1.05s">2</text>
+    <text class="g" x="448" y="135" style="animation-delay:1.1s">}</text>
+    <text class="f" x="448" y="135" style="animation-delay:1.95s">n</text>
+
+    <!-- m (x=500) -->
+    <text class="g" x="500" y="135" style="animation-delay:1.25s">5</text>
+    <text class="g" x="500" y="135" style="animation-delay:1.3s">!</text>
+    <text class="g" x="500" y="135" style="animation-delay:1.35s">=</text>
+    <text class="f" x="500" y="135" style="animation-delay:2.2s">m</text>
+
+    <!-- n (x=552) -->
+    <text class="g" x="552" y="135" style="animation-delay:1.5s">~</text>
+    <text class="g" x="552" y="135" style="animation-delay:1.55s">4</text>
+    <text class="g" x="552" y="135" style="animation-delay:1.6s">+</text>
+    <text class="f" x="552" y="135" style="animation-delay:2.45s">n</text>
+
+    <!-- k (x=604) -->
+    <text class="g" x="604" y="135" style="animation-delay:1.75s">;</text>
+    <text class="g" x="604" y="135" style="animation-delay:1.8s">8</text>
+    <text class="g" x="604" y="135" style="animation-delay:1.85s">^</text>
+    <text class="f" x="604" y="135" style="animation-delay:2.7s">k</text>
+  </g>
+
+  <!-- Blinking cursor -->
+  <text class="cur" x="656" y="135">_</text>
+
+  <!-- Accent line -->
+  <rect class="line" x="240" y="152" width="416" height="2" fill="#38BDF8" style="animation-delay:2.7s"/>
+
+  <!-- Subtitle -->
+  <text class="sub" x="450" y="188" text-anchor="middle" style="animation-delay:3s">Frontend Developer | Institut Teknologi Del</text>
+</svg>
