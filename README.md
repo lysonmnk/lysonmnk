@@ -16,32 +16,22 @@
 
 ---
 
-## 👨‍💻 About Me
+## 👨‍💻 About
 
-I am a developer specializing in **Frontend & Backend Development**. My work focuses on building clean, intuitive, and responsive user interfaces paired with robust, scalable backend architectures. I am also actively exploring artificial intelligence integrations and modern software design patterns.
+I am a developer specializing in **Frontend & Backend Development**. My work focuses on building clear, responsive, and maintainable user interfaces paired with robust server-side architecture. I am also expanding my knowledge in artificial intelligence and modern software engineering practices.
 
-| 🚀 Frontend & UI/UX | ⚙️ Backend Architecture | 🤝 Open To |
+| 🚀 Focus | 📚 Currently Studying | 🤝 Open To |
 |:---|:---|:---|
-| Modern UI with React, Next.js & Tailwind CSS | RESTful & GraphQL APIs with Node.js, NestJS & Express | Collaborative web & open-source projects |
-| Responsive, accessible design systems | Relational & NoSQL databases (PostgreSQL, MongoDB) | Technical discussions & peer learning |
-| High-performance interactive experiences | Scalable microservices & Docker containerization | Mentoring & knowledge exchange |
+| Frontend development with React and Next.js | Artificial Intelligence & Cloud | Collaborative web projects |
+| Responsive and accessible interface design | Software Architecture & System Design | Technical discussion and peer learning |
+| High-performance backend services with Node & NestJS | Database Optimization & Microservices | Mentoring and knowledge exchange |
 
 ---
 
 ## 🛠️ Technical Skills
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/lysonmnk/lysonmnk/main/assets/skills-3d.svg" width="100%" alt="3D Isometric Skills Keyboard" />
-</p>
-
-<p align="center">
-  <sub>🎮 <i>Looking for the live 3D keyboard with physical keypress sound & scroll physics? Open <a href="interactive-skills.html"><b>interactive-skills.html</b></a>!</i></sub>
-</p>
-
-<br>
-
 <details open>
-<summary><b>🎨 Frontend & UI/UX Design</b></summary>
+<summary><b>🎨 Frontend and Design</b></summary>
 <br>
 
 <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,svelte,tailwind,figma,illustrator&perline=11&theme=dark" alt="Frontend skills" />
@@ -49,7 +39,7 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 </details>
 
 <details>
-<summary><b>⚙️ Backend & Databases</b></summary>
+<summary><b>⚙️ Backend and Databases</b></summary>
 <br>
 
 <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,spring,python,go,mongodb,mysql,postgres&perline=9&theme=dark" alt="Backend skills" />
@@ -57,7 +47,7 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 </details>
 
 <details>
-<summary><b>📱 Mobile & DevOps Tools</b></summary>
+<summary><b>📱 Mobile and Tools</b></summary>
 <br>
 
 <img src="https://skillicons.dev/icons?i=flutter,kotlin,c,docker,git,github,vscode&perline=7&theme=dark" alt="Mobile and tools" />
@@ -68,23 +58,19 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 
 ## 📂 Selected Projects
 
-| Project | Description | Tech Stack |
+| Project | Description | Technologies |
 |:---|:---|:---|
-| [**Catatan Belajar Ngoding**](https://github.com/lysonmnk/ifs24024-pabwe2026-proyek1) | Learning notes web application developed for PABWE 2026, featuring decoupled client-server architecture. | `React` `NestJS` |
-| [**ControlFlowCoverage**](https://github.com/lysonmnk/ControlFlowCoverage) | Automated white-box software testing analysis implementing control-flow graph coverage criteria. | `Software Testing` `Analysis` |
-| [**pemfung**](https://github.com/lysonmnk/pemfung) | Functional programming explorations and problem-solving implementations covering core FP paradigms. | `Functional Programming` |
+| [**Catatan Belajar Ngoding**](https://github.com/lysonmnk/ifs24024-pabwe2026-proyek1) | Learning notes application developed for the PABWE 2026 course, with separate frontend and backend services | React, NestJS |
+| [**ControlFlowCoverage**](https://github.com/lysonmnk/ControlFlowCoverage) | Automated white-box software testing analysis implementing control-flow graph coverage criteria | Python, Testing |
+| [**pemfung**](https://github.com/lysonmnk/pemfung) | Functional programming explorations and problem-solving implementations covering core FP paradigms | Functional Programming |
 
 ---
 
 ## 📊 GitHub Statistics
 
 <p align="center">
-  <img height="165" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
-  <img height="165" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lysonmnk&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img height="160" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=true" />
+  <img height="170" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
+  <img height="170" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=true" />
 </p>
 
 <p align="center">
@@ -93,8 +79,8 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 
 ---
 
-## 📬 Connect with Me
+## 📬 Contact
 
-- 💬 **Discord**: [discord.gg/lysonmnk](https://discord.gg/lysonmnk)
-- 🐙 **GitHub**: [@lysonmnk](https://github.com/lysonmnk)
-- ✉️ **Email**: [lysonmanik30@gmail.com](mailto:lysonmanik30@gmail.com)
+- 💬 Discord: [discord.gg/lysonmnk](https://discord.gg/lysonmnk)
+- 🐙 GitHub: [github.com/lysonmnk](https://github.com/lysonmnk)
+- ✉️ Email: [lysonmanik30@gmail.com](mailto:lysonmanik30@gmail.com)
