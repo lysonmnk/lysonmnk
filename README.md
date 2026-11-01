@@ -12,11 +12,15 @@
 
 <img src="https://komarev.com/ghpvc/?username=lysonmnk&label=Profile%20views&color=0EA5E9&style=flat-square" alt="Profile views" />
 
+<br><br>
+<img src="./assets/cyber-divider.svg" width="100%" alt="divider" />
+<br>
+
 </div>
 
----
+<img src="./assets/header-about.svg" width="100%" alt="About Me" />
 
-## 👨‍💻 About
+<br>
 
 I am a developer specializing in **Frontend & Backend Development**. My work focuses on building clear, responsive, and maintainable user interfaces paired with robust server-side architecture. I am also expanding my knowledge in artificial intelligence and modern software engineering practices.
 
@@ -26,9 +30,15 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 | Responsive and accessible interface design | Software Architecture & System Design | Technical discussion and peer learning |
 | High-performance backend services with Node & NestJS | Database Optimization & Microservices | Mentoring and knowledge exchange |
 
----
+<br>
+<div align="center">
+  <img src="./assets/cyber-divider.svg" width="100%" alt="divider" />
+</div>
+<br>
 
-## 🛠️ Technical Skills
+<img src="./assets/header-skills.svg" width="100%" alt="Technical Skills" />
+
+<br>
 
 <details open>
 <summary><b>🎨 Frontend and Design</b></summary>
@@ -54,9 +64,15 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 
 </details>
 
----
+<br>
+<div align="center">
+  <img src="./assets/cyber-divider.svg" width="100%" alt="divider" />
+</div>
+<br>
 
-## 📂 Selected Projects
+<img src="./assets/header-projects.svg" width="100%" alt="Selected Projects" />
+
+<br>
 
 | Project | Description | Technologies |
 |:---|:---|:---|
@@ -64,23 +80,35 @@ I am a developer specializing in **Frontend & Backend Development**. My work foc
 | [**ControlFlowCoverage**](https://github.com/lysonmnk/ControlFlowCoverage) | Automated white-box software testing analysis implementing control-flow graph coverage criteria | Python, Testing |
 | [**pemfung**](https://github.com/lysonmnk/pemfung) | Functional programming explorations and problem-solving implementations covering core FP paradigms | Functional Programming |
 
----
+<br>
+<div align="center">
+  <img src="./assets/cyber-divider.svg" width="100%" alt="divider" />
+</div>
+<br>
 
-## 📊 GitHub Statistics
+<img src="./assets/header-stats.svg" width="100%" alt="GitHub Statistics" />
+
+<br>
 
 <p align="center">
-  <img height="170" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
-  <img height="170" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=true" />
+  <img height="170" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&theme=tokyonight&hide_border=false&bg_color=080D1A&border_color=1E293B&title_color=38BDF8&text_color=94A3B8&icon_color=38BDF8&include_all_commits=true" />
+  <img height="170" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=false&background=080D1A&border=1E293B&stroke=1E293B&ring=38BDF8&fire=38BDF8&currStreakLabel=38BDF8" />
 </p>
 
 <p align="center">
   <img alt="Achievements" src="https://github-profile-trophy.vercel.app/?username=lysonmnk&theme=tokyonight&no-frame=true&no-bg=true&column=7" />
 </p>
 
----
+<br>
+<div align="center">
+  <img src="./assets/cyber-divider.svg" width="100%" alt="divider" />
+</div>
+<br>
 
-## 📬 Contact
+<img src="./assets/header-contact.svg" width="100%" alt="Get in Touch" />
 
-- 💬 Discord: [discord.gg/lysonmnk](https://discord.gg/lysonmnk)
-- 🐙 GitHub: [github.com/lysonmnk](https://github.com/lysonmnk)
-- ✉️ Email: [lysonmanik30@gmail.com](mailto:lysonmanik30@gmail.com)
+<br>
+
+- 💬 **Discord**: [discord.gg/lysonmnk](https://discord.gg/lysonmnk)
+- 🐙 **GitHub**: [github.com/lysonmnk](https://github.com/lysonmnk)
+- ✉️ **Email**: [lysonmanik30@gmail.com](mailto:lysonmanik30@gmail.com)
