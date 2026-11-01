@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/lysonmnk/lysonmnk/main/assets/code-reveal.svg" width="100%" alt="Lysonmnk - Frontend Developer" />
+<img src="https://raw.githubusercontent.com/lysonmnk/lysonmnk/main/assets/code-reveal.svg" width="100%" alt="Lysonmnk - Frontend Developer | Backend Dev" />
 
 <br><br>
 
@@ -18,17 +18,27 @@
 
 ## 👨‍💻 About Me
 
-I am a student at **Institut Teknologi Del** with a strong passion for frontend development. My work focuses on building clean, intuitive, and responsive user interfaces with accessible design systems. I am also actively exploring artificial intelligence integrations and modern software architecture.
+I am a developer specializing in **Frontend & Backend Development**. My work focuses on building clean, intuitive, and responsive user interfaces paired with robust, scalable backend architectures. I am also actively exploring artificial intelligence integrations and modern software design patterns.
 
-| 🚀 Focus | 📚 Currently Studying | 🤝 Open To |
+| 🚀 Frontend & UI/UX | ⚙️ Backend Architecture | 🤝 Open To |
 |:---|:---|:---|
-| Frontend development with React & Next.js | Artificial Intelligence & ML | Collaborative web & open-source projects |
-| Responsive, modern & accessible UI/UX design | Project Management & Agile Methodologies | Technical discussions & peer learning |
-| High-performance client-server integration | Scalable software architecture | Mentoring & knowledge exchange |
+| Modern UI with React, Next.js & Tailwind CSS | RESTful & GraphQL APIs with Node.js, NestJS & Express | Collaborative web & open-source projects |
+| Responsive, accessible design systems | Relational & NoSQL databases (PostgreSQL, MongoDB) | Technical discussions & peer learning |
+| High-performance interactive experiences | Scalable microservices & Docker containerization | Mentoring & knowledge exchange |
 
 ---
 
 ## 🛠️ Technical Skills
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lysonmnk/lysonmnk/main/assets/skills-3d.svg" width="100%" alt="3D Isometric Skills Keyboard" />
+</p>
+
+<p align="center">
+  <sub>🎮 <i>Looking for the live 3D keyboard with physical keypress sound & scroll physics? Open <a href="interactive-skills.html"><b>interactive-skills.html</b></a>!</i></sub>
+</p>
+
+<br>
 
 <details open>
 <summary><b>🎨 Frontend & UI/UX Design</b></summary>

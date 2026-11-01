@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lysonmnk - Interactive 3D Skills Keyboard</title>
+  <style>
+    :root {
+      --bg-dark: #080C14;
+      --card-bg: rgba(15, 23, 42, 0.75);
+      --accent: #38BDF8;
+      --accent-glow: rgba(56, 189, 248, 0.4);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border-color: rgba(56, 189, 248, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+
+    body {
+      background: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 50% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Consolas, monospace;
+      min-height: 250vh;
+      overflow-x: hidden;
+      perspective: 1400px;
+    }
+
+    /* Fixed Top Navigation */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+      background: rgba(8, 12, 20, 0.7);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--text-main);
+    }
+
+    .logo span {
+      color: var(--accent);
+      text-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .badge-status {
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10B981;
+      box-shadow: 0 0 8px #10B981;
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    /* Floating Viewport Container */
+    .viewport {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100vw;
+      height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      perspective: 1200px;
+      transform-style: preserve-3d;
+      pointer-events: none;
+    }
+
+    /* Info Header (Title & Hint) */
+    .header-banner {
+      position: absolute;
+      top: 30px;
+      text-align: center;
+      z-index: 20;
+      pointer-events: auto;
+    }
+
+    .skills-title {
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #FFFFFF 30%, #94A3B8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.8));
+    }
+
+    .skills-hint {
+      font-size: 15px;
+      color: #38BDF8;
+      letter-spacing: 1px;
+      margin-top: 6px;
+      font-family: monospace;
+      animation: pulseHint 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseHint {
+      0%, 100% { opacity: 0.85; transform: translateY(0); }
+      50% { opacity: 1; transform: translateY(-2px); }
+    }
+
+    /* Left Floating Detail Card */
+    .detail-card {
+      position: absolute;
+      left: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 320px;
+      padding: 24px;
+      border-radius: 20px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 30px rgba(56, 189, 248, 0.1);
+      z-index: 30;
+      pointer-events: auto;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .detail-tag {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .detail-name {
+      font-size: 28px;
+      font-weight: 800;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .detail-quote {
+      font-size: 14px;
+      color: #94A3B8;
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 16px;
+      border-left: 2px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .detail-key {
+      display: inline-block;
+      padding: 3px 10px;
+      background: #1E293B;
+      border: 1px solid #475569;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 12px;
+      color: #38BDF8;
+    }
+
+    /* 3D Keyboard Scene */
+    .keyboard-stage {
+      position: relative;
+      width: 720px;
+      height: 480px;
+      transform-style: preserve-3d;
+      transition: transform 0.15s ease-out;
+      pointer-events: auto;
+      margin-left: 140px;
+    }
+
+    /* Keyboard Base / Plate */
+    .keyboard-base {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(145deg, #161F30, #0B111D);
+      border-radius: 28px;
+      border: 2px solid #1E293B;
+      box-shadow: 
+        0 40px 80px rgba(0,0,0,0.9),
+        0 10px 20px rgba(0,0,0,0.6),
+        inset 0 2px 6px rgba(255,255,255,0.08);
+      transform: translateZ(-20px);
+    }
+
+    /* Keycaps Grid */
+    .keycaps-grid {
+      position: absolute;
+      top: 30px;
+      left: 35px;
+      display: grid;
+      grid-template-columns: repeat(5, 115px);
+      gap: 18px;
+      transform-style: preserve-3d;
+    }
+
+    /* Individual 3D Keycap */
+    .keycap {
+      position: relative;
+      width: 115px;
+      height: 75px;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      transition: transform 0.12s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .keycap-body {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transform-style: preserve-3d;
+      transform: translateZ(16px);
+      transition: all 0.12s ease;
+      box-shadow: 
+        0 8px 0 var(--key-shadow, #1E293B),
+        0 14px 20px rgba(0,0,0,0.6);
+      background: var(--key-bg, #1E293B);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .keycap:hover .keycap-body {
+      transform: translateZ(20px);
+      box-shadow: 
+        0 12px 0 var(--key-shadow, #1E293B),
+        0 20px 28px rgba(0,0,0,0.7),
+        0 0 16px var(--key-glow, rgba(56, 189, 248, 0.4));
+    }
+
+    .keycap.pressed .keycap-body {
+      transform: translateZ(4px) !important;
+      box-shadow: 
+        0 2px 0 var(--key-shadow, #1E293B) !important,
+        0 4px 10px rgba(0,0,0,0.8),
+        0 0 25px var(--key-glow, rgba(56, 189, 248, 0.8)) !important;
+    }
+
+    .key-letter {
+      position: absolute;
+      top: 6px;
+      left: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.5);
+      font-family: monospace;
+    }
+
+    .key-icon {
+      font-size: 26px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+    }
+
+    .key-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: 0.5px;
+    }
+
+    /* Key Color Themes */
+    .key-html    { --key-bg: #EA580C; --key-shadow: #9A3412; --key-glow: #EA580C; }
+    .key-css     { --key-bg: #2563EB; --key-shadow: #1D4ED8; --key-glow: #3B82F6; }
+    .key-js      { --key-bg: #CA8A04; --key-shadow: #854D0E; --key-glow: #EAB308; color: #111; }
+    .key-ts      { --key-bg: #0284C7; --key-shadow: #0369A1; --key-glow: #38BDF8; }
+    .key-react   { --key-bg: #0891B2; --key-shadow: #0E7490; --key-glow: #06B6D4; }
+    .key-next    { --key-bg: #0F172A; --key-shadow: #020617; --key-glow: #64748B; }
+    .key-vue     { --key-bg: #059669; --key-shadow: #047857; --key-glow: #10B981; }
+    .key-tailwind{ --key-bg: #0D9488; --key-shadow: #0F766E; --key-glow: #14B8A6; }
+    .key-node    { --key-bg: #15803D; --key-shadow: #166534; --key-glow: #22C55E; }
+    .key-express { --key-bg: #334155; --key-shadow: #1E293B; --key-glow: #94A3B8; }
+    .key-nest    { --key-bg: #E11D48; --key-shadow: #BE123C; --key-glow: #F43F5E; }
+    .key-python  { --key-bg: #3B82F6; --key-shadow: #1D4ED8; --key-glow: #60A5FA; }
+    .key-mongo   { --key-bg: #16A34A; --key-shadow: #15803D; --key-glow: #4ADE80; }
+    .key-docker  { --key-bg: #0284C7; --key-shadow: #0369A1; --key-glow: #38BDF8; }
+    .key-git     { --key-bg: #DC2626; --key-shadow: #B91C1C; --key-glow: #EF4444; }
+
+    /* Scroll Indicator at Bottom */
+    .scroll-indicator {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      z-index: 50;
+      opacity: 0.7;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, 6px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="logo">LYSONMNK<span>.DEV</span></div>
+    <div class="badge-status">
+      <div class="pulse-dot"></div>
+      Frontend Developer | Backend Dev
+    </div>
+  </header>
+
+  <!-- 3D Viewport -->
+  <div class="viewport">
+    
+    <!-- Title -->
+    <div class="header-banner">
+      <h1 class="skills-title">SKILLS</h1>
+      <p class="skills-hint">(hint: press a key or scroll to tilt 3D board)</p>
+    </div>
+
+    <!-- Dynamic Detail Card -->
+    <div class="detail-card" id="detailCard">
+      <div class="detail-tag" id="detailCategory">Web Fundamentals</div>
+      <div class="detail-name" id="detailName">
+        <span id="detailIcon">🌐</span>
+        <span id="detailTitle">HTML5</span>
+      </div>
+      <div class="detail-quote" id="detailQuote">
+        "Internet's granddad, still kickin' fr fr!"
+      </div>
+      <div>
+        <span class="detail-key" id="detailKey">Trigger Key: H</span>
+      </div>
+    </div>
+
+    <!-- 3D Keyboard Stage -->
+    <div class="keyboard-stage" id="keyboardStage">
+      <div class="keyboard-base"></div>
+      
+      <div class="keycaps-grid">
+        <!-- Row 1 -->
+        <div class="keycap key-html" data-key="h" data-name="HTML5" data-cat="Core Web" data-icon="🌐" data-quote="Internet's granddad, still kickin' fr fr!">
+          <div class="keycap-body">
+            <span class="key-letter">H</span>
+            <span class="key-icon">🌐</span>
+            <span class="key-name">HTML5</span>
+          </div>
+        </div>
+
+        <div class="keycap key-css" data-key="c" data-name="CSS3" data-cat="Styling & FX" data-icon="🎨" data-quote="Centering a div since 1996 and loving every pixel.">
+          <div class="keycap-body">
+            <span class="key-letter">C</span>
+            <span class="key-icon">🎨</span>
+            <span class="key-name">CSS3</span>
+          </div>
+        </div>
+
+        <div class="keycap key-js" data-key="j" data-name="JavaScript" data-cat="Scripting" data-icon="⚡" data-quote="0.1 + 0.2 = 0.30000000000000004 but runs the entire universe!">
+          <div class="keycap-body">
+            <span class="key-letter">J</span>
+            <span class="key-icon">⚡</span>
+            <span class="key-name">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="keycap key-ts" data-key="t" data-name="TypeScript" data-cat="Type Safety" data-icon="🛡️" data-quote="JavaScript with trust issues and red squiggly lines that save lives.">
+          <div class="keycap-body">
+            <span class="key-letter">T</span>
+            <span class="key-icon">🛡️</span>
+            <span class="key-name">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="keycap key-react" data-key="r" data-name="React" data-cat="Frontend Library" data-icon="⚛️" data-quote="Component-driven architecture and hooks that spark joy.">
+          <div class="keycap-body">
+            <span class="key-letter">R</span>
+            <span class="key-icon">⚛️</span>
+            <span class="key-name">React</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="keycap key-next" data-key="n" data-name="Next.js" data-cat="Fullstack React" data-icon="▲" data-quote="SSR, ISR, Server Actions, and lightning-fast route transitions.">
+          <div class="keycap-body">
+            <span class="key-letter">N</span>
+            <span class="key-icon">▲</span>
+            <span class="key-name">Next.js</span>
+          </div>
+        </div>
+
+        <div class="keycap key-vue" data-key="v" data-name="Vue.js" data-cat="Reactive UI" data-icon="💚" data-quote="Clean reactivity and SFCs that make frontend enjoyable.">
+          <div class="keycap-body">
+            <span class="key-letter">V</span>
+            <span class="key-icon">💚</span>
+            <span class="key-name">Vue.js</span>
+          </div>
+        </div>
+
+        <div class="keycap key-tailwind" data-key="w" data-name="Tailwind CSS" data-cat="Utility-first" data-icon="🌊" data-quote="Why switch files when you can write 40 utility classes directly?">
+          <div class="keycap-body">
+            <span class="key-letter">W</span>
+            <span class="key-icon">🌊</span>
+            <span class="key-name">Tailwind</span>
+          </div>
+        </div>
+
+        <div class="keycap key-node" data-key="o" data-name="Node.js" data-cat="Runtime" data-icon="🟢" data-quote="Event loop powerhouse serving backend APIs at blazing speed.">
+          <div class="keycap-body">
+            <span class="key-letter">O</span>
+            <span class="key-icon">🟢</span>
+            <span class="key-name">Node.js</span>
+          </div>
+        </div>
+
+        <div class="keycap key-nest" data-key="s" data-name="NestJS" data-cat="Backend Framework" data-icon="🦁" data-quote="Enterprise-grade architecture with TypeScript decorators and DI.">
+          <div class="keycap-body">
+            <span class="key-letter">S</span>
+            <span class="key-icon">🦁</span>
+            <span class="key-name">NestJS</span>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="keycap key-express" data-key="e" data-name="Express" data-cat="Micro Framework" data-icon="🚂" data-quote="Minimalist and battle-tested middleware routing.">
+          <div class="keycap-body">
+            <span class="key-letter">E</span>
+            <span class="key-icon">🚂</span>
+            <span class="key-name">Express</span>
+          </div>
+        </div>
+
+        <div class="keycap key-python" data-key="p" data-name="Python" data-cat="Language & AI" data-icon="🐍" data-quote="Readable elegance, data science, and AI pipelines.">
+          <div class="keycap-body">
+            <span class="key-letter">P</span>
+            <span class="key-icon">🐍</span>
+            <span class="key-name">Python</span>
+          </div>
+        </div>
+
+        <div class="keycap key-mongo" data-key="m" data-name="MongoDB" data-cat="NoSQL Database" data-icon="🍃" data-quote="Flexible JSON documents ready for agile scaling.">
+          <div class="keycap-body">
+            <span class="key-letter">M</span>
+            <span class="key-icon">🍃</span>
+            <span class="key-name">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="keycap key-docker" data-key="d" data-name="Docker" data-cat="DevOps" data-icon="🐳" data-quote="'It works on my machine' solved forever in containers.">
+          <div class="keycap-body">
+            <span class="key-letter">D</span>
+            <span class="key-icon">🐳</span>
+            <span class="key-name">Docker</span>
+          </div>
+        </div>
+
+        <div class="keycap key-git" data-key="g" data-name="Git" data-cat="Version Control" data-icon="🐙" data-quote="git commit -m 'fixed bug' - the bedrock of collaboration.">
+          <div class="keycap-body">
+            <span class="key-letter">G</span>
+            <span class="key-icon">🐙</span>
+            <span class="key-name">Git</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-indicator">
+    <span>↓ SCROLL TO TILT & FLOAT 3D KEYBOARD ↓</span>
+  </div>
+
+  <script>
+    const stage = document.getElementById('keyboardStage');
+    const keycaps = document.querySelectorAll('.keycap');
+    const detailCard = document.getElementById('detailCard');
+    const detailCategory = document.getElementById('detailCategory');
+    const detailName = document.getElementById('detailName');
+    const detailIcon = document.getElementById('detailIcon');
+    const detailTitle = document.getElementById('detailTitle');
+    const detailQuote = document.getElementById('detailQuote');
+    const detailKey = document.getElementById('detailKey');
+
+    // Audio synthesizer for click sound
+    let audioCtx = null;
+    function playClickSound(freq = 600) {
+      try {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'triangle';
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(120, audioCtx.currentTime + 0.06);
+        gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.05);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.06);
+      } catch (e) {}
+    }
+
+    // Base angles
+    let baseRotateX = 52;
+    let baseRotateY = 0;
+    let baseRotateZ = -28;
+
+    let targetRotX = baseRotateX;
+    let targetRotY = baseRotateY;
+    let targetRotZ = baseRotateZ;
+    let targetTransY = 0;
+
+    // Scroll Handler: floating & dynamic position change
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = Math.min(Math.max(scrollY / (maxScroll || 1), 0), 1);
+
+      // As you scroll down: changes tilt, rotation, and elevation (floating feel)
+      targetRotX = baseRotateX - progress * 24;
+      targetRotY = baseRotateY + progress * 28;
+      targetRotZ = baseRotateZ + progress * 16;
+      targetTransY = -progress * 60;
+    });
+
+    // Mouse Move tilt
+    window.addEventListener('mousemove', (e) => {
+      const xNorm = (e.clientX / window.innerWidth) - 0.5;
+      const yNorm = (e.clientY / window.innerHeight) - 0.5;
+      targetRotX = (baseRotateX + targetTransY * 0.1) - (yNorm * 12);
+      targetRotY = (baseRotateY) + (xNorm * 15);
+    });
+
+    // Smooth RAF animation loop
+    let currentRotX = baseRotateX;
+    let currentRotY = baseRotateY;
+    let currentRotZ = baseRotateZ;
+    let currentTransY = 0;
+
+    function renderLoop() {
+      currentRotX += (targetRotX - currentRotX) * 0.08;
+      currentRotY += (targetRotY - currentRotY) * 0.08;
+      currentRotZ += (targetRotZ - currentRotZ) * 0.08;
+      currentTransY += (targetTransY - currentTransY) * 0.08;
+
+      // Floating sine wave
+      const floatOffset = Math.sin(Date.now() / 800) * 8;
+
+      stage.style.transform = `
+        translateY(${currentTransY + floatOffset}px)
+        rotateX(${currentRotX}deg)
+        rotateY(${currentRotY}deg)
+        rotateZ(${currentRotZ}deg)
+      `;
+
+      requestAnimationFrame(renderLoop);
+    }
+    renderLoop();
+
+    // Key Selection & Activation
+    function selectKey(el) {
+      if (!el) return;
+      playClickSound(800);
+      el.classList.add('pressed');
+      
+      const name = el.getAttribute('data-name');
+      const cat = el.getAttribute('data-cat');
+      const icon = el.getAttribute('data-icon');
+      const quote = el.getAttribute('data-quote');
+      const key = el.getAttribute('data-key').toUpperCase();
+
+      detailCategory.textContent = cat;
+      detailIcon.textContent = icon;
+      detailTitle.textContent = name;
+      detailQuote.textContent = `"${quote}"`;
+      detailKey.textContent = `Trigger Key: ${key}`;
+
+      setTimeout(() => {
+        el.classList.remove('pressed');
+      }, 160);
+    }
+
+    // Click handler for mouse
+    keycaps.forEach(cap => {
+      cap.addEventListener('click', () => selectKey(cap));
+      cap.addEventListener('mouseenter', () => {
+        const name = cap.getAttribute('data-name');
+        const cat = cap.getAttribute('data-cat');
+        const icon = cap.getAttribute('data-icon');
+        const quote = cap.getAttribute('data-quote');
+        const key = cap.getAttribute('data-key').toUpperCase();
+
+        detailCategory.textContent = cat;
+        detailIcon.textContent = icon;
+        detailTitle.textContent = name;
+        detailQuote.textContent = `"${quote}"`;
+        detailKey.textContent = `Trigger Key: ${key}`;
+      });
+    });
+
+    // Keyboard physical key press listener
+    window.addEventListener('keydown', (e) => {
+      const k = e.key.toLowerCase();
+      const match = document.querySelector(`.keycap[data-key="${k}"]`);
+      if (match) {
+        selectKey(match);
+      }
+    });
+  </script>
+</body>
+</html>
