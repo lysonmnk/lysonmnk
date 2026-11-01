@@ -1,122 +1,16 @@
-<div align="center">
+<h1 align="center">Hi 👋, I'm Lysonmnk</h1>
+<h3 align="center">A passionate frontend developer from India</h3>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:0EA5E9,100:6366F1&height=240&section=header&text=Lysonmnk&fontSize=68&fontColor=FFFFFF&fontAlignY=38&animation=fadeIn&desc=Frontend%20Developer&descAlignY=58&descSize=22" width="100%" alt="Header" />
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=lysonmnk&label=Profile%20views&color=0e75b6&style=flat" alt="lysonmnk" /> </p>
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&duration=3500&pause=1200&color=0EA5E9&center=true&vCenter=true&width=900&height=40&lines=Frontend+Developer+focused+on+clean%2C+responsive+interfaces;Student+at+Institut+Teknologi+Del;Exploring+Artificial+Intelligence+and+Project+Management" alt="Typing animation" />
-
-<br><br>
-
-[![Discord](https://img.shields.io/badge/Discord-lysonmnk-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=0F172A)](https://discord.gg/lysonmnk)
-[![GitHub](https://img.shields.io/badge/GitHub-lysonmnk-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0F172A)](https://github.com/lysonmnk)
-[![Portfolio](https://img.shields.io/badge/Portfolio-View-0EA5E9?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=0F172A)](https://lysonmnk.github.io/portfolio/)
-
-<br>
-
-<img src="https://komarev.com/ghpvc/?username=lysonmnk&label=Profile%20views&color=0EA5E9&style=flat-square" alt="Profile views" />
-
-</div>
-
----
-
-## About
-
-I am a student at Institut Teknologi Del with a strong interest in frontend development. My work focuses on building clear, responsive, and maintainable user interfaces. I am also expanding my knowledge in artificial intelligence and project management.
-
-| Focus | Currently Studying | Open To |
-|:---|:---|:---|
-| Frontend development with React and Next.js | Artificial Intelligence | Collaborative web projects |
-| Responsive and accessible interface design | Project Management | Technical discussion and peer learning |
-| Integration with backend services | Software architecture | Mentoring and knowledge exchange |
-
----
-
-## Technical Skills
-
-<details>
-<summary><b>Frontend and Design</b></summary>
-<br>
-
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,vue,svelte,tailwind,figma,illustrator&perline=11" alt="Frontend skills" />
-
-</details>
-
-<details>
-<summary><b>Backend and Databases</b></summary>
-<br>
-
-<img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,spring,python,go,mongodb,mysql,postgres&perline=9" alt="Backend skills" />
-
-</details>
-
-<details>
-<summary><b>Mobile and Tools</b></summary>
-<br>
-
-<img src="https://skillicons.dev/icons?i=flutter,kotlin,c,docker,git,github,vscode&perline=7" alt="Mobile and tools" />
-
-</details>
-
----
-
-## Selected Projects
-
-| Project | Description | Technologies |
-|:---|:---|:---|
-| [**Catatan Belajar Ngoding**](https://github.com/lysonmnk/ifs24024-pabwe2026-proyek1) | Learning notes application developed for the PABWE 2026 course, with separate frontend and backend services | React, NestJS |
-| [**ControlFlowCoverage**](https://github.com/lysonmnk/ControlFlowCoverage) | [Add a short description of the project] | [Add technologies] |
-| [**pemfung**](https://github.com/lysonmnk/pemfung) | [Add a short description of the project] | [Add technologies] |
-
-<details>
-<summary><b>Portfolio</b></summary>
-<br>
-
-A full portfolio with interactive sections and 3D visuals is available at the link below.
-
-[![Open Portfolio](https://img.shields.io/badge/Open_Portfolio-0EA5E9?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=0F172A)](https://lysonmnk.github.io/portfolio/)
-
-</details>
-
----
-
-## GitHub Statistics
-
-<p align="center">
-  <img height="170" alt="GitHub statistics" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" />
-  <img height="170" alt="Contribution streak" src="https://streak-stats.demolab.com/?user=lysonmnk&theme=tokyonight&hide_border=true" />
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://discord.gg/lysonmnk" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="lysonmnk" height="30" width="40" /></a>
 </p>
 
-<p align="center">
-  <img alt="Activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=lysonmnk&theme=tokyo-night&hide_border=true&area=true&radius=10" />
-</p>
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://www.haskell.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg" alt="haskell" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://www.invisionapp.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg" alt="invision" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nestjs.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-plain.svg" alt="nestjs" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40"/> </a> <a href="https://svelte.dev" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="svelte" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a> </p>
 
-<p align="center">
-  <img alt="Achievements" src="https://github-profile-trophy.vercel.app/?username=lysonmnk&theme=tokyonight&no-frame=true&no-bg=true&column=7" />
-</p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=lysonmnk&show_icons=true&locale=en" alt="lysonmnk" /></p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lysonmnk/lysonmnk/output/github-contribution-grid-snake-dark.svg" />
-    <img alt="Contribution graph" src="https://raw.githubusercontent.com/lysonmnk/lysonmnk/output/github-contribution-grid-snake.svg" />
-  </picture>
-</p>
-
----
-
-## Contact
-
-<details>
-<summary><b>Get in touch</b></summary>
-<br>
-
-- Discord: [discord.gg/lysonmnk](https://discord.gg/lysonmnk)
-- GitHub: [github.com/lysonmnk](https://github.com/lysonmnk)
-
-</details>
-
-<br>
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,50:0EA5E9,100:0F172A&height=120&section=footer&animation=fadeIn" width="100%" alt="Footer" />
-
-</div>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=lysonmnk&" alt="lysonmnk" /></p>
